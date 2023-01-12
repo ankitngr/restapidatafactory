@@ -1,0 +1,9 @@
+{
+	"name": "restapidatafactory2006",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7e065b94-ca91-4437-be5c-cc587c338ba3",
+		"tenantId": "82f1b3bf-9fce-489e-a3a7-a886831157c7"
+	}
+}

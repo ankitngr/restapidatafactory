@@ -1,0 +1,31 @@
+{
+	"name": "pl_run_data_factory",
+	"properties": {
+		"activities": [
+			{
+				"name": "Runpipelinettest",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://management.azure.com/subscriptions/6a8381d2-c099-4fe9-9933-7caf75e082f1/resourceGroups/datafactoryrg/ providers/Microsoft.DataFactory/factories/testwafadatafactory/pipelines/Demopl/createRun?api-version=2018-06-01",
+					"method": "POST",
+					"authentication": {
+						"type": "MSI",
+						"resource": "https://management.azure.com/"
+					}
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-01-09T16:53:53Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
