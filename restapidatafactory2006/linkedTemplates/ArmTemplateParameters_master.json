@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "restapidatafactory2006"
 		},
+		"ls_Azure_blob_connectionString": {
+			"value": ""
+		},
 		"containerUri": {
 			"value": ""
 		},

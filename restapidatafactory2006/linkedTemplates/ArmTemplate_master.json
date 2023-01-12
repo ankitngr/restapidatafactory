@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "restapidatafactory2006"
 		},
+		"ls_Azure_blob_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ls_Azure_blob'"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -33,6 +37,9 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"ls_Azure_blob_connectionString": {
+						"value": "[parameters('ls_Azure_blob_connectionString')]"
 					}
 				}
 			},
